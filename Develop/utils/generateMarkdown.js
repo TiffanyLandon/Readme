@@ -32,7 +32,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Description
-  ${data.description}
+  ${data.confirmDescription}
 
   ## Table of content
   - [Installation](#installation)
@@ -43,18 +43,18 @@ function generateMarkdown(data) {
   - [Questions](#questions)
   
   ## Installation
-  ${data.installation}
+  ${data.installationUsage}
 
   ## Usage
 
-  ${data.usage}
+  ${data.usageInfo}
 
   ## Contribution
   
   ${data.contribution}
 
   ## Test
-  ${data.test}
+  ${data.Test}
 
   ## License
   ${renderLicenseSection(data.license)}
@@ -62,9 +62,11 @@ function generateMarkdown(data) {
 
   ##Questions
   
-  GitHub Repo](https://github.com/${data.gitHubUserName})
+  GitHub Repo](https://github.com/${data.gitHubUsername})
   
-  email :${data.email}
+  email : reach me for addditional questions ${data.email}
+
+  # Link to the video 
 `;
 }
 
