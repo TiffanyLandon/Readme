@@ -1,9 +1,9 @@
-# love
+# Professional Read Me
 
   ![License:${license}](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  true
+  A command-line app generate a read me file.
 
   ## Table of content
   - [Installation](#installation)
@@ -14,18 +14,18 @@
   - [Questions](#questions)
   
   ## Installation
-  n/a
+  First clone or fetch the repo into a folder into your desktop. then you will open the command line and open the folder you clone or fetch from this repo.
 
   ## Usage
 
-  n/a
+  n/s
 
   ## Contribution
   
   n/a
 
   ## Test
-  n/a
+  To create test then you need to create a folder in the same folder as the repo you clone or fetch then create a file for the test and generater a code for the test.
 
   ## License
   ![license:${license}]
@@ -35,6 +35,6 @@
   
   GitHub Repo](https://github.com/undefined)
   
-  email : reach me for addditional questions tiffanym.bryan@gmail.com
+  email : reach me for addditional questions Tiffanym.bryan@gmail.com
 
   # Link to the video 

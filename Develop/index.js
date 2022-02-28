@@ -21,16 +21,17 @@ const questions = () => {
                 }
             },
             {
-                type: 'confirm',
-                name: 'confirmDescription',
-                message: 'Would you like to provide a short description explaining the what, why, and how of your project?.',
-                default: true,
-            },
-            {
                 type: 'Input',
                 name: 'confirmDescription',
                 message: 'Provide a short description explaining the what, why, and how of your project.',
-                when: ({ confirmDescription }) => confirmDescription
+                validate: nameInput => {
+                    if (nameInput) {
+                        return true;
+                    } else {
+                        console.log('Provide a short description')
+                        return false
+                    }
+                }
             },
             {
                 type: 'Input',
@@ -61,12 +62,12 @@ const questions = () => {
             {
                 type: 'Input',
                 name: 'contribution',
-                message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so',
+                message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so.',
                 validate: nameInput => {
                     if (nameInput) {
                         return true;
                     } else {
-                        console.log('If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so');
+                        console.log('If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so.');
                         return false;
                     }
                 }
@@ -93,12 +94,12 @@ const questions = () => {
             {
                 type: 'Input',
                 name: 'githubUsername',
-                message: 'Please provide your github username',
+                message: 'Please provide your github username:',
                 validate: nameInput => {
                     if (nameInput) {
                         return true;
                     } else {
-                        console.log('Provide your github username');
+                        console.log('Provide your github username:');
                         return false
                     }
                 }
@@ -106,12 +107,12 @@ const questions = () => {
             {
                 type: 'Input',
                 name: 'email',
-                message: 'Please provide a email address',
+                message: 'Please provide a email address:',
                 validate: nameInput => {
                     if (nameInput) {
                         return true;
                     } else {
-                        console.log('Provide a email address');
+                        console.log('Provide a email address:');
                         return false;
                     }
                 }
